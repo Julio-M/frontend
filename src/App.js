@@ -117,7 +117,7 @@ function App() {
 
   //Delete product from the database
   const deleteProduct = (deleteItem) => {
-    fetch(`http://localhost:3000/products/${deleteItem.id}`, {
+    fetch(`${productsUrl}/${deleteItem.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
